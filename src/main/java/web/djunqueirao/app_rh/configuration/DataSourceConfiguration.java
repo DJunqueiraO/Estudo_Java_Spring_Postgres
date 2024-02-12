@@ -16,7 +16,8 @@ public class DataSourceConfiguration {
     DataSource getDataSource() {
     	DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
     	driverManagerDataSource.setDriverClassName("org.postgresql.Driver");
-		driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/store");
+		driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/WhiteLabel?createDatabaseIfNotExist=true");
+		
 		driverManagerDataSource.setUsername("postgres");
 		driverManagerDataSource.setPassword("admin");
 		return driverManagerDataSource;

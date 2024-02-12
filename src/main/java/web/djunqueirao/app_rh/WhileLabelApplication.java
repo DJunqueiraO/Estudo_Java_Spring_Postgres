@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppRhApplication {
+public class WhileLabelApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppRhApplication.class, args);
+		SpringApplication.run(WhileLabelApplication.class, args);
 	}
 }
