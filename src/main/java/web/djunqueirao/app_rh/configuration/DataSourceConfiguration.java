@@ -15,17 +15,17 @@ public class DataSourceConfiguration {
     @Bean
     DataSource getDataSource() {
     	DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-    	driverManagerDataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/AppRh?createDatabaseIfNotExist=true");
-		driverManagerDataSource.setUsername("root");
-		driverManagerDataSource.setPassword("toor");
+    	driverManagerDataSource.setDriverClassName("org.postgresql.Driver");
+		driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/store");
+		driverManagerDataSource.setUsername("postgres");
+		driverManagerDataSource.setPassword("admin");
 		return driverManagerDataSource;
 	}
 
     @Bean
     JpaVendorAdapter setJpaVendorAdapter() {
     	HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
-    	adapter.setDatabase(Database.MYSQL);
+    	adapter.setDatabase(Database.POSTGRESQL);
     	adapter.setShowSql(true);
     	adapter.setGenerateDdl(true);
     	adapter.setPrepareConnection(true);
