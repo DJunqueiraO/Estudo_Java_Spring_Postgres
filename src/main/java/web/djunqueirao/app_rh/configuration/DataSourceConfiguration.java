@@ -15,11 +15,10 @@ public class DataSourceConfiguration {
     @Bean
     DataSource getDataSource() {
     	DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-    	driverManagerDataSource.setDriverClassName("org.postgresql.Driver");
-		driverManagerDataSource.setUrl("jdbc:postgresql://localhost:5432/WhiteLabel?createDatabaseIfNotExist=true");
-		
-		driverManagerDataSource.setUsername("postgres");
-		driverManagerDataSource.setPassword("admin");
+    	driverManagerDataSource.setDriverClassName(Properties.DRIVER_CLASSNAME.toString());
+		driverManagerDataSource.setUrl(Properties.URL.toString());
+		driverManagerDataSource.setUsername(Properties.USERNAME.toString());
+		driverManagerDataSource.setPassword(Properties.PASSWORD.toString());
 		return driverManagerDataSource;
 	}
 

@@ -2,6 +2,9 @@ web/djunqueirao/app_rh/configuration/*.java
 
 HELP.md
 
+Properties.java
+**/Properties.java
+
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

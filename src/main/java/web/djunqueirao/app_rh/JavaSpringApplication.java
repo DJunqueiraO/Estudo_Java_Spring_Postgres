@@ -7,12 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import web.djunqueirao.app_rh.services.ExampleService;
 
 @SpringBootApplication
-public class WhileLabelApplication {
+public class JavaSpringApplication {
 
 	@Autowired
 	private ExampleService exampleService;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(WhileLabelApplication.class, args);
+		SpringApplication.run(JavaSpringApplication.class, args);
 	}
 }
