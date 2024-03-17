@@ -6,9 +6,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Table(name = "examples")
-@Entity(name = "Example")
-public class Example {
+@Table(name = "products")
+@Entity(name = "Product")
+public class Product {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

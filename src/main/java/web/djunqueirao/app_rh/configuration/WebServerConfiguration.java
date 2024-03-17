@@ -9,6 +9,6 @@ public class WebServerConfiguration implements WebServerFactoryCustomizer<Config
 
     @Override
     public void customize(ConfigurableWebServerFactory configurableWebServerFactory) {
-    	configurableWebServerFactory.setPort(8081);
+    	configurableWebServerFactory.setPort(Integer.parseInt(Properties.PORT.toString()));
     }
 }
